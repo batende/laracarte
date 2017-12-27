@@ -4,7 +4,7 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <a class="navbar-brand" href="{{route('root_path')}}">Laracarte</a>
+            <a class="navbar-brand" href="{{route('root_path')}}"> {{config('app.name')}}</a>
         </div>
 
         <div class="navbar-collapse collapse" id="navbar">

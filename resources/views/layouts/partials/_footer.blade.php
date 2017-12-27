@@ -1,6 +1,6 @@
 <footer class="text-center">
     <p>
-        &copy;{{date('Y')}} &middot;Laracarte by 
+        &copy;{{date('Y')}} &middot; {{config('app.name')}} by 
         <a href="https://twitter.com/james_batende"> @james_batende </a> 
         A laramap clone app.
     </p>
