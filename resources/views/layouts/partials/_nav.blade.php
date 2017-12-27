@@ -9,7 +9,7 @@
 
         <div class="navbar-collapse collapse" id="navbar">
             <ul class="nav navbar-nav">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="{{route('root_path')}}">Home</a>
                 </li>
                 <li>

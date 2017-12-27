@@ -1,4 +1,4 @@
-@extends('layouts.default') 
+@extends('layouts.default',['title'=>'About']) 
 
 @section('content')
 
@@ -21,7 +21,7 @@
 
 	<p>
         Feel free to help to improve the
-        <a target="_blank" href="#">source code</a>.
+        <a target="_blank" href="https://github.com/batende/laracarte">source code</a>.
     </p>
 
 	<hr>
