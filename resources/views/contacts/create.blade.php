@@ -9,24 +9,24 @@
                     <span class="text-muted">If you having trouble with this service, please 
                         <a href="mailto:your-account@helpful.io" data-helpful="laracarte" data-helpful-modal="on">ask for help</a>
                     </span>
-                    <form action="" method="POST">
+                    <form action="{{route('contact_path')}}" method="POST" novalidate>
                             {{csrf_field()}}
                             <div class="form-group ">
                                     <label class="control-label">Name</label>
                                     <input type="text" name="name" id="name" class="form-control" value="" required="required">
-                                    
+                                    {!!$errors->first('name','<p class="help-block">:message</p>')!!}
                                 </div>
             
                                 <div class="form-group ">
                                     <label class="control-label">Email</label>
                                     <input type="email" name="email" value="" class="form-control" required="required">
-                                    
+                                    {!!$errors->first('email','<p class="help-block">:message</p>')!!}
                                 </div>
             
             
                                 <div class="form-group ">
                                     <textarea class="form-control" name="message" rows="10" cols="10" required="required"></textarea>
-                                    
+                                    {!!$errors->first('message','<p class="help-block">:message</p>')!!}
                                 </div>
             
                                 <div class="form-group">

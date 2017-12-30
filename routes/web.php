@@ -14,3 +14,9 @@ Route::get('/contact', [
     'as'=>'contact_path',
     'uses'=>'ContactsController@create'
 ]);
+
+Route::post('/contact', [
+    'as'=>'contact_path',
+    'uses'=>'ContactsController@store'
+]);
+
