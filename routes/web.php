@@ -1,9 +1,16 @@
 <?php
 
+use App\Mail\ContactMessageCreated;
+
 Route::get('/', [
     'as'=>'root_path',
     'uses'=>'PagesController@home'
 ]);
+
+Route::get('/test-email',function(){
+    return new ContactMessageCreated('Batende','batendejames55@gmail.com','Merci pour laracarte');
+});
+
 
 Route::get('/about', [
     'as'=>'about_path',

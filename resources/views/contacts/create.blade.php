@@ -9,7 +9,7 @@
                     <span class="text-muted">If you having trouble with this service, please 
                         <a href="mailto:your-account@helpful.io" data-helpful="laracarte" data-helpful-modal="on">ask for help</a>
                     </span>
-                    <form action="{{route('contact_path')}}" method="POST" novalidate>
+                    <form action="{{route('contact_path')}}" method="POST">
                             {{csrf_field()}}
                             <div class="form-group ">
                                     <label class="control-label">Name</label>
